@@ -42,7 +42,9 @@ $paginationIni = $page == 1 ? 0 : (($page - 1) * $rowsPerPage);
                             <td><button type="button"
                                     onClick="location.href = 'edit_order.php?id=<?php echo $order['order_id']; ?>';"
                                     class="btn btn-primary">Edit</button></td>
-                            <td><button type="button" class="btn btn-danger">Delete</button></td>
+                            <td><button type="button"
+                                    onClick="location.href = 'delete_order.php?id=<?php echo $order['order_id']; ?>';"
+                                    class="btn btn-danger">Delete</button></td>
                         </tr>
                         <?php
                     }

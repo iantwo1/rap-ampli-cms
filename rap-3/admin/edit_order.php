@@ -42,7 +42,7 @@ if (!$dados) {
             <h4>Edit Order</h4>
             <?php
             foreach ($errors as $k => $error) {
-                echo '<div class="alert alert-error" role="alert">' + $error + '</div>';
+                echo '<div class="alert alert-danger" role="alert">' + $error + '</div>';
             }
             ?>
             <form action="edit_order.php?id=<?php echo $orderID; ?>" method="POST">
