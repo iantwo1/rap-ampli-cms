@@ -1,5 +1,8 @@
 <?php
 include("header.php");
+if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn'] == true) {
+    header('Location: dashboard.php');
+}
 $error = $_GET['error'] ?? null;
 ?>
 <div class="container-fluid">
