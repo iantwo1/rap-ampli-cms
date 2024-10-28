@@ -32,7 +32,10 @@ $paginationIni = $page == 1 ? 0 : (($page - 1) * $rowsPerPage);
                     $allDados = mysqli_fetch_all($allOrders, MYSQLI_ASSOC);
                     $totalRegistros = count($allDados);
                     $totalPages = ceil($totalRegistros / $rowsPerPage);
-                    foreach ($dados as $orders => $order) {
+                    if (count($dados) == 0) {
+                        echo "Nenhum registro encontrado!";
+                    }
+                    foreach ($dados as $k => $order) {
                         ?>
                         <tr>
                             <th scope="row"><?php echo $order['order_id'] ?></th>
@@ -52,7 +55,7 @@ $paginationIni = $page == 1 ? 0 : (($page - 1) * $rowsPerPage);
 
                 </tbody>
             </table>
-            <nav aria-label="Page navigation example">
+            <nav>
                 <ul class="pagination">
                     <?php
                     if ($page != 1) {
