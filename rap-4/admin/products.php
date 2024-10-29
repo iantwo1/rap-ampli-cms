@@ -49,13 +49,13 @@ $paginationIni = $page == 1 ? 0 : (($page - 1) * $rowsPerPage);
                             <td><?php echo $product['product_category'] ?></td>
                             <td><?php echo $product['product_price'] ?></td>
                             <td><button type="button"
-                                    onClick="location.href = 'edit_product.php?id=<?php echo $order['product_id']; ?>';"
+                                    onClick="location.href = 'edit_product.php?id=<?php echo $product['product_id']; ?>';"
                                     class="btn btn-primary">Edit</button></td>
                             <td><button type="button"
-                                    onClick="location.href = 'edit_product_images.php?id=<?php echo $order['product_id']; ?>';"
+                                    onClick="location.href = 'edit_product_images.php?id=<?php echo $product['product_id']; ?>';"
                                     class="btn btn-primary">Edit images</button></td>
                             <td><button type="button"
-                                    onClick="location.href = 'delete_product.php?id=<?php echo $order['product_id']; ?>';"
+                                    onClick="location.href = 'delete_product.php?id=<?php echo $product['product_id']; ?>';"
                                     class="btn btn-danger">Delete</button></td>
                         </tr>
                         <?php
