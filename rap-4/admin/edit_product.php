@@ -63,7 +63,7 @@ if (count($_POST) > 0) {
     <div class="row">
         <?php require 'sidemenu.php'; ?>
         <div class="col-md-9">
-            <h4>Create Product</h4>
+            <h4>Edit Product</h4>
             <?php
             foreach ($errors as $k => $error) {
                 echo '<div class="alert alert-danger" role="alert">' . $error . '</div>';

@@ -22,7 +22,7 @@ https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome
     <script src="
 https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/js/all.min.js
 "></script>
-    <title>RAP-3 ADMIN</title>
+    <title>RAP-4 ADMIN</title>
 </head>
 
 <body>
